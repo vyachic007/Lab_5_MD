@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settingsRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,8 +11,7 @@
         android:id="@+id/settingsContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:fitsSystemWindows="true">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/settingsTitleTextView"
@@ -22,23 +21,20 @@
             android:textSize="22sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="16dp"
-            android:fitsSystemWindows="true" />
+            android:paddingBottom="16dp" />
 
         <TextView
             android:id="@+id/fontSizeTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/font_size_default"
-            android:textSize="16sp"
-            android:fitsSystemWindows="true" />
+            android:textSize="16sp" />
 
         <SeekBar
             android:id="@+id/fontSizeSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="10"
-            android:fitsSystemWindows="true" />
+            android:max="10" />
 
         <TextView
             android:id="@+id/itemHeightTextView"
@@ -46,15 +42,13 @@
             android:layout_height="wrap_content"
             android:text="@string/item_height_auto"
             android:textSize="16sp"
-            android:paddingTop="12dp"
-            android:fitsSystemWindows="true" />
+            android:paddingTop="12dp" />
 
         <SeekBar
             android:id="@+id/itemHeightSeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="120"
-            android:fitsSystemWindows="true" />
+            android:max="120" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/showManufacturerSwitch"
@@ -62,31 +56,27 @@
             android:layout_height="wrap_content"
             android:text="@string/show_manufacturer"
             android:checked="true"
-            android:paddingTop="12dp"
-            android:fitsSystemWindows="true" />
+            android:paddingTop="12dp" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/showCountrySwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/show_country"
-            android:checked="true"
-            android:fitsSystemWindows="true" />
+            android:checked="true" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/showQuantitySwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/show_quantity"
-            android:checked="true"
-            android:fitsSystemWindows="true" />
+            android:checked="true" />
 
         <CheckBox
             android:id="@+id/largePriceCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/large_price"
-            android:fitsSystemWindows="true" />
+            android:text="@string/large_price" />
 
         <Button
             android:id="@+id/saveSettingsButton"
@@ -94,14 +84,16 @@
             android:layout_height="wrap_content"
             android:text="@string/save"
             android:layout_marginTop="20dp"
-            android:fitsSystemWindows="true" />
+            android:backgroundTint="#23517C"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/backButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/back"
-            android:fitsSystemWindows="true" />
+            android:backgroundTint="#23517C"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 

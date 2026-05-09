@@ -38,10 +38,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/settings"
+            android:textStyle="bold"
+            android:textColor="#0D1B2A"
             android:textAllCaps="false"
             android:textSize="14sp"
             android:fitsSystemWindows="true"
             app:icon="@android:drawable/ic_menu_manage"
+            app:iconTint="#0D1B2A"
             app:iconGravity="textStart" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -108,11 +111,14 @@
                 android:paddingBottom="6dp"
                 android:text="@string/select"
                 android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B2A"
                 android:textAllCaps="false"
                 android:singleLine="true"
                 android:gravity="center"
                 android:fitsSystemWindows="true"
                 app:icon="@android:drawable/checkbox_on_background"
+                app:iconTint="@null"
                 app:iconGravity="top"
                 app:iconPadding="3dp" />
 
@@ -130,11 +136,13 @@
                 android:paddingBottom="6dp"
                 android:text="@string/share"
                 android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B2A"
                 android:textAllCaps="false"
                 android:singleLine="true"
                 android:gravity="center"
-                android:fitsSystemWindows="true"
                 app:icon="@android:drawable/ic_menu_share"
+                app:iconTint="@null"
                 app:iconGravity="top"
                 app:iconPadding="3dp" />
 
@@ -152,11 +160,13 @@
                 android:paddingBottom="6dp"
                 android:text="@string/delete"
                 android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B2A"
                 android:textAllCaps="false"
                 android:singleLine="true"
                 android:gravity="center"
-                android:fitsSystemWindows="true"
                 app:icon="@android:drawable/ic_menu_delete"
+                app:iconTint="@null"
                 app:iconGravity="top"
                 app:iconPadding="3dp" />
 
@@ -174,11 +184,13 @@
                 android:paddingBottom="6dp"
                 android:text="@string/exit"
                 android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B2A"
                 android:textAllCaps="false"
                 android:singleLine="true"
                 android:gravity="center"
-                android:fitsSystemWindows="true"
                 app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconTint="@null"
                 app:iconGravity="top"
                 app:iconPadding="3dp" />
 
@@ -193,7 +205,8 @@
         android:contentDescription="@string/add_product"
         android:layout_gravity="bottom|end"
         android:layout_margin="24dp"
-        android:fitsSystemWindows="true"
+        app:backgroundTint="#0D1B2A"
+        app:tint="#FFFFFF"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
