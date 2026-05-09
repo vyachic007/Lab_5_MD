@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F5F6FA">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:fitsSystemWindows="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settingsButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:fitsSystemWindows="true"
+            app:icon="@android:drawable/ic_menu_manage"
+            app:iconGravity="textStart" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="135dp"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#FFFFFF"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="6dp"
+        android:elevation="8dp"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/selectionCounterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="@string/selected_count_default"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:gravity="center"
+            android:fitsSystemWindows="true" />
+
+        <LinearLayout
+            android:id="@+id/selectionButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectAllButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="6dp"
+                android:text="@string/select"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/checkbox_on_background"
+                app:iconGravity="top"
+                app:iconPadding="3dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="6dp"
+                android:text="@string/share"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/ic_menu_share"
+                app:iconGravity="top"
+                app:iconPadding="3dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteSelectedButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="6dp"
+                android:text="@string/delete"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconGravity="top"
+                app:iconPadding="3dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exitSelectionButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="6dp"
+                android:text="@string/exit"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:singleLine="true"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconGravity="top"
+                app:iconPadding="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addProductFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_product"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:fitsSystemWindows="true"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

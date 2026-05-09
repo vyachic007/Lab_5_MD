@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogProductRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/dialogProductContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="360dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:fitsSystemWindows="true">
+
+        <EditText
+            android:id="@+id/articleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_article"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_name"
+            android:inputType="textCapWords"
+            android:autofillHints="name"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/manufacturerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_manufacturer"
+            android:inputType="textCapWords"
+            android:autofillHints="organizationName"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/countryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_country"
+            android:inputType="textCapWords"
+            android:autofillHints="countryName"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/categoryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_category"
+            android:inputType="textCapWords"
+            android:autofillHints="username"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_price"
+            android:inputType="numberDecimal"
+            android:autofillHints="postalCode"
+            android:fitsSystemWindows="true" />
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:hint="@string/hint_quantity"
+            android:inputType="number"
+            android:autofillHints="postalCode"
+            android:fitsSystemWindows="true" />
+
+    </LinearLayout>
+
+</ScrollView>

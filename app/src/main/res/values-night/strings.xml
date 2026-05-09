@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Артикул">Артикул</string>
+    <string name="Наименование">Наименование</string>
+    <string name="Производитель">Производитель</string>
+    <string name="Страна_производства">Страна производства</string>
+    <string name="Категория_товара">Категория товара</string>
+    <string name="Цена">Цена</string>
+    <string name="Остаток">Остаток</string>
+    <string name="внеш_вид">Настройки внешнего вида</string>
+    <string name="Размер_шрифта">Размер шрифта: 16</string>
+    <string name="Высота_элемента">Высота элемента: авто</string>
+    <string name="settings_title">Настройки внешнего вида</string>
+    <string name="font_size_default">Размер шрифта: 16</string>
+    <string name="item_height_auto">Высота элемента: авто</string>
+    <string name="show_manufacturer">Показывать производителя</string>
+    <string name="show_country">Показывать страну производства</string>
+    <string name="show_quantity">Показывать остаток</string>
+    <string name="large_price">Показывать цену крупным шрифтом</string>
+    <string name="save">Сохранить</string>
+    <string name="back">Назад</string>
+</resources>

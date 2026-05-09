@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/productItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:fitsSystemWindows="true"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/productItemContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true">
+
+            <CheckBox
+                android:id="@+id/productCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fitsSystemWindows="true" />
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/product_default_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#202124"
+                android:fitsSystemWindows="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/productArticleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_article"
+            android:textSize="14sp"
+            android:textColor="#5F6368"
+            android:layout_marginTop="4dp"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/productManufacturerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_manufacturer"
+            android:textSize="14sp"
+            android:textColor="#5F6368"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/productCountryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_country"
+            android:textSize="14sp"
+            android:textColor="#5F6368"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/productCategoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_category"
+            android:textSize="14sp"
+            android:textColor="#5F6368"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_price"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:layout_marginTop="4dp"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/productQuantityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/product_default_quantity"
+            android:textSize="14sp"
+            android:textColor="#5F6368"
+            android:fitsSystemWindows="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:background="#E0E0E0"
+            android:fitsSystemWindows="true" />
+
+        <LinearLayout
+            android:id="@+id/itemButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editProductButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit"
+                android:textSize="11sp"
+                android:textAllCaps="false"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconGravity="top"
+                app:iconPadding="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteProductButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:textSize="11sp"
+                android:textAllCaps="false"
+                android:fitsSystemWindows="true"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconGravity="top"
+                app:iconPadding="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
