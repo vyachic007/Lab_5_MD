@@ -18,8 +18,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_article"
-            android:inputType="text"
-            android:autofillHints="username" />
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/nameEditText"
@@ -27,8 +26,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_name"
-            android:inputType="textCapWords"
-            android:autofillHints="name" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/manufacturerEditText"
@@ -36,8 +34,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_manufacturer"
-            android:inputType="textCapWords"
-            android:autofillHints="organizationName" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/countryEditText"
@@ -45,8 +42,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_country"
-            android:inputType="textCapWords"
-            android:autofillHints="countryName" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/categoryEditText"
@@ -54,8 +50,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_category"
-            android:inputType="textCapWords"
-            android:autofillHints="username" />
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/priceEditText"
@@ -63,8 +58,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_price"
-            android:inputType="numberDecimal"
-            android:autofillHints="postalCode" />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/quantityEditText"
@@ -72,8 +66,7 @@
             android:layout_height="wrap_content"
             android:minHeight="56dp"
             android:hint="@string/hint_quantity"
-            android:inputType="number"
-            android:autofillHints="postalCode" />
+            android:inputType="number" />
 
     </LinearLayout>
 
