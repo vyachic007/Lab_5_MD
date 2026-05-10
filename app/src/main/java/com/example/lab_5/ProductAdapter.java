@@ -69,12 +69,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         return selectionMode;
     }
 
+
     // Выбор/снятие выбора товара
     public void toggleSelection(Product product) {
         long id = product.getId();
 
         if (selectedIds.contains(id)) { //выбран ли этот товар или нет
-            selectedIds.remove(id); //если да- снимаем галочку
+            selectedIds.remove(id); //если да-снимаем галочку
         } else {
             selectedIds.add(id);
         }

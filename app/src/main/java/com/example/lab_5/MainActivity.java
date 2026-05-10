@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     enterSelectionMode();
                 }
 
-                productAdapter.toggleSelection(product);
+                productAdapter.toggleSelection(product); //выбираем товар нажатый
                 updateSelectionUi();
             }
 
